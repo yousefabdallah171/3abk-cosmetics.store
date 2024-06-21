@@ -1,0 +1,489 @@
+:root {
+    --primary-color: #ff3c78;
+    --secondary-color: #ff5733;
+    --light-black: rgba(0, 0, 0, 0.89);
+    --black: #1b1717;
+    --white: #fff;
+    --grey: #aaa;
+    --light-grey: #ccc;
+    --dark-grey: #555;
+    --border-radius: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/ss.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+
+.continer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .continer {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .continer {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .continer {
+        width: 1170px;
+    }
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+:root {
+    --primary-color: #ff3c78;
+}
+
+
+
+/* //........top text ........// */
+
+header .continer {
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 96px;
+}
+
+header nav {
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+header ul {
+    display: flex;
+}
+
+header .continer nav ul li a {
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 20px 10px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+@media(max-width:991px) {
+    header nav ul li a .hide {
+        display: none;
+    }
+
+}
+
+@media(min-width:992px) {
+    header nav ul li a .show {
+        display: none;
+    }
+
+}
+
+
+/* Sticky header */
+#siteHeader {
+    background-color: rgba(255, 255, 255, 0.877);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.header-hide {
+    transform: translateY(-100%);
+}
+
+.header-show {
+    transform: translateY(0);
+}
+
+#cartItems {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+
+/* /* end header    */
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.checkout-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background: #f9f9f9;
+}
+
+.checkout-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark-grey);
+
+}
+
+.checkout-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--light-black);
+    font-size: 1.2rem;
+}
+
+.checkout-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.checkout-item:hover {
+    background-color: #e8e8e8;
+    transform: translateY(-5px);
+}
+
+.checkout-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.checkout-container #totalPrice {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.checkout-container .fill {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.checkout-item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.checkout-item-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--dark-grey);
+    margin-bottom: 5px;
+}
+
+.checkout-item-price {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.total-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--dark-grey);
+    text-align: right;
+    margin: 20px 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-box label {
+
+    font-size: 1rem;
+    color: var(--dark-grey);
+    margin-bottom: 5px;
+}
+
+.input-box .loc {
+    padding: 5px 5px 140px 5px;
+}
+
+.input-box .locc {
+    padding: 5px 5px 60px 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-box input::placeholder {
+    color: var(--light-grey);
+}
+
+.input-box input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(255, 60, 120, 0.6);
+}
+
+button.btn {
+    width: 102%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 15px;
+    }
+
+    .checkout-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .checkout-container .fill {
+        font-size: 20px;
+    }
+
+    .checkout-item-details {
+        font-size: 0.9rem;
+    }
+
+    .total-price {
+        font-size: 1.2rem;
+    }
+
+    .input-box input {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    button.btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #ff
+}
+
+
+.input-box input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(255, 60, 120, 0.6);
+}
+
+
+.checkout-item {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.checkout-item:hover {
+    background-color: #e8e8e8;
+    transform: translateY(-5px);
+}
+
+button.btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.btn:hover {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 15px;
+    }
+
+    .checkout-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .checkout-item-details {
+        font-size: 0.9rem;
+    }
+
+    .total-price {
+        font-size: 1.2rem;
+    }
+
+    .input-box input {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    button.btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+.remove-item-btn {
+    background-color: #ff3c78;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid var(--primary-color);
+}
+
+.remove-item-btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}

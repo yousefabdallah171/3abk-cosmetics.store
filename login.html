@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="Js/login.js"></script>
+    <!-- FontAwesome CDN for icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" autocomplete="username" required>
+
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button" onclick="validateForm(event)">Login</button>
+            <div class="social-login">
+                <a href="#" class="social-button facebook" onclick="loginWithFacebook()">
+                    <i class="fab fa-facebook-f"></i> Login with Facebook
+                </a>
+                <a href="#" class="social-button google" onclick="loginWithGoogle()">
+                    <i class="fab fa-google"></i> Login with Google
+                </a>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </form>
+        <div class="go-to-index">
+            <a href="index.html" class="go-home-button">
+                <i class="fas fa-sign-out-alt"></i> Go to Home Page
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

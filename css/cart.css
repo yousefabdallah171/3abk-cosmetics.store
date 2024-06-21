@@ -1,0 +1,239 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #ff3c78;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    background: url(../images/5894379.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #ff
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .container {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+}
+
+
+.logo img {
+    max-width: 100px;
+    align-content: center;
+    display: flex;
+    height: auto;
+}
+
+nav ul {
+    padding: 20px 10px;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Sticky header */
+#siteHeader {
+    background-color: rgba(255, 255, 255, 0.877);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.header-hide {
+    transform: translateY(-100%);
+}
+
+.header-show {
+    transform: translateY(0);
+}
+
+@media(max-width:767px) {
+    nav ul li {
+        text-align: center;
+        display: block;
+        margin: 20px 0
+    }
+
+
+
+
+}
+
+@media(max-width:991px) {
+    header nav ul li a .hide {
+        display: none;
+    }
+
+}
+
+@media(min-width:992px) {
+    header nav ul li a .show {
+        display: none;
+    }
+
+}
+
+/* Cart page specific styles */
+.checkout-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#cartItems {
+    margin-bottom: 20px;
+}
+
+.checkout-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.checkout-item:hover {
+    background-color: #f9f9f9;
+}
+
+.checkout-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.checkout-item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.checkout-item-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.checkout-item-price {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.total-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    margin: 20px 0;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: solid 1px var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+    transition: color 0.3s;
+}
+
+.btn:hover {
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.checkout-item .remove-button {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: solid 1px var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+    transition: color 0.3s;
+}
+
+.checkout-item .remove-button:hover {
+    color: var(--primary-color);
+    background-color: white;
+}

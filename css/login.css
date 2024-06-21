@@ -1,0 +1,167 @@
+/* Global CSS variables */
+:root {
+    --primary-color: #ff3c78;
+    --light-black: rgba(0, 0, 0, 0.89);
+    --secondary-color: #ff5733;
+    --black: #1b1717;
+    --white: #fff;
+    --grey: #aaa;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid var(--primary-color);
+}
+
+.login-button:hover {
+    color: var(--primary-color);
+    background-color: var(--white);
+}
+
+.social-login {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* Distribute buttons evenly */
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    width: 48%;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-button.facebook {
+    background-color: #1877f2;
+    color: var(--white);
+    border: 1px solid #1877f2;
+}
+
+.social-button.facebook:hover {
+    background-color: #0e5cad;
+    border-color: #0e5cad;
+}
+
+.social-button.google {
+    background-color: #db4437;
+    color: var(--white);
+    border: 1px solid #db4437;
+}
+
+.social-button.google:hover {
+    background-color: #c13522;
+    border-color: #c13522;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.go-to-index {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.go-to-index .go-home-button {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+border: 1px solid var(--primary-color);
+}
+
+.go-to-index .go-home-button:hover .fa-sign-out-alt{
+    color: var(--primary-color);
+}
+.go-to-index .go-home-button:hover {
+background-color: white;
+color: var(--primary-color);
+}
+
+.fa-sign-out-alt {
+    margin-right: 8px;
+    color: var(--white);
+}

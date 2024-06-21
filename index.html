@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- normlaze -->
+    <link rel="stylesheet" href="css/normal.css">
+    <!-- mian Stlye file -->
+    <link rel="stylesheet" href="css/Style.css">
+    <!-- js file  -->
+    <script src="Js/js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3abak Cosmetics Store</title>
+    <link rel="stylesheet" href="css/normal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <!-- Start Header -->
+    <header>
+        <div class="contaiiiner">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <nav>
+                <div class="toggle-menu" id="togglemenu" onclick="toggleNavMenu(event)">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#sellers" class="smooth-scroll">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="form">
+                    <div class="user-avatar" id="userAvatar" onclick="toggleDropdown(event)">
+                        <img src="images/Avatar-Profile-Vector-PNG-Cutout.png" alt="User Avatar" class="avatar-image">
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <a class="dropdown-button" href="login.html">Sign Up</a>
+                            <a class="dropdown-button" href="login.html">Log in</a>
+                        </div>
+                    </div>
+                    <div class="cart-icon" onclick="redirectToCartPage()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cartCount">0</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- End Header -->
+
+    <!-- Dropdown menu for Login -->
+    <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </div>
+    <!-- end header  -->
+    <!-- start landing page -->
+    <section id="home">
+
+
+        <div class="home_page ">
+            <div loading="lazy" alt="description" class="home_img ">
+            </div>
+            <div class="home_txt ">
+                <p class="Collection">SUMMER COLLECTION</p>
+                <h2>3abk - Brand<br>Collection 2024</h2>
+                <div class="home_label ">
+                    <p>
+                        Bringing out natural beauty with gentle and affordable skincare, makeup, and personal care
+                        products for everyday use. Simple and effective..</p>
+                </div>
+                <button><a class="smooth-scroll" href="#sellers">SHOP NOW</a><i
+                        class='bx bx-right-arrow-alt'></i></button>
+                <div class="home_social_icons">
+
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61555486414543"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/3abak_cosmetics/"><i
+                            class="fa-brands fa-instagram"></i></i></a>
+                    <a target="_blank" href="https://wa.me/201211490415"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end landing page  -->
+    <!-- start the three collection  -->
+    <section id="collection">
+        <div class="collections container">
+            <div class="content">
+                <img src="https://fimgs.net/mdimg/secundar/o.51827.jpg" alt="img" />
+                <div class="img-content">
+                    <p>Perfume Collections</p>
+                    <button><a href="#sellers">SHOP NOW</a></button>
+                </div>
+            </div>
+            <div class="content2">
+                <img src="https://th.bing.com/th/id/OIP._T1i2gfN3DQXCAOXkCtOBgHaHa?rs=1&pid=ImgDetMain" alt="img" />
+                <div class="img-content2">
+                    <p>Serum Spring</p>
+                    <button><a href="#sellers">SHOP NOW</a></button>
+                </div>
+            </div>
+            <div class="content3">
+                <img src="https://th.bing.com/th/id/OIP.TK5YXET2zwgZy6SqiG0BcAHaIq?rs=1&pid=ImgDetMain" alt="img" />
+                <div class="img-content3">
+                    <p>Budy Splash</p>
+                    <button><a href="#sellers">SHOP NOW</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end  the three collection  -->
+    <!-- start selling area  -->
+    <!--  -->
+
+
+
+
+
+    <!--  -->
+    <section id="selelers">
+        <div class="seller container">
+            <h2>Top Sales</h2>
+            <div class="best-seller">
+                <!-- start prodect  -->
+                <div class="best-p1">
+                    <img src="images/pro1 65.jpeg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Deodrorant cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+
+                        <div class="price">
+                            &pound;65
+
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Deodrorant cream', 65, 'images/pro1 65.jpeg'   )">
+                                <a>Add to Cart</a>
+                            </button>
+                            <button onclick="addToCart('Deodrorant cream', 65, 'images/pro1 65.jpeg'   )">
+                                <a href="checkout.html">Buy now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end prodect  -->
+                <!-- start prodect  -->
+                <div class="best-p1">
+                    <img src="images/pro2 85.jpeg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Hair Balm</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="price">
+                            &pound;85
+
+                        </div>
+
+
+                        <div class="buy-now">
+                            <button onclick="addToCart('Hair Balm', 85, 'images/pro2 85.jpeg' )">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+
+
+                            <button onclick="addToCart('Hair Balm', 85, 'images/pro2 85.jpeg' )">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--  prodect  -->
+                <div class="best-p1">
+                    <img src="images/pro7 55.jpeg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p> Matte lip balm for men </p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="price">
+                            &pound;55
+
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart(' lip balm for men ', 55, 'images/pro7 55.jpeg')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button onclick="addToCart(' lip balm for men ', 55, 'images/pro7 55.jpeg')">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--  prodect  -->
+                <div class="best-p1">
+                    <img src="images/pro5 175.jpeg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Serum to treat and pigmentation</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="price">
+                            &pound;175
+
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--  prodect  -->
+            </div>
+        </div>
+        <div class="seller container">
+            <h2>New Arrivals</h2>
+            <div class="best-seller">
+                <!--  prodect  -->
+                <div class="best-p1">
+                    <img src="images/pro6 35.jpeg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>mini body splash</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            &pound;35
+
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Body Splash ',35, 'images/pro6 35.jpeg')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button onclick="addToCart('Body Splash ',35, 'images/pro6 35.jpeg')">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="images/pro3 55.jpeg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Scrabbing Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            &pound;55
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Scrabiing cream', 55, 'images/pro3 55.jpeg')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button onclick="addToCart('Scrabiing cream', 55, 'images/pro3 55.jpeg')">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="images/pro4 65.jpeg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Evy Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            &pound;65
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Eye Cream', 65,'images/pro4 65.jpeg')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button onclick="addToCart('Eye Cream', 65,'images/pro4 65.jpeg')">
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="images/pro8 65.jpeg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Hand Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            &pound;65
+
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="seller container">
+            <h2>Hot Sales</h2>
+            <div class="best-seller">
+                <div class="best-p1">
+                    <img src="https://i.postimg.cc/jS7pSQLf/na4.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Shoes</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            &dollar;37.24
+                            <div class="colors">
+
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button
+                                onclick="addToCart('PS England Shoes', 37.24, 'https://i.postimg.cc/8CmBZH5N/jacket.webp')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button
+                                onclick="addToCart('PS England Jacket', 17.24, 'https://i.postimg.cc/8CmBZH5N/jacket.webp' )">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://i.postimg.cc/fbnB2yfj/na1.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England T-Shirt</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            &dollar;10.23
+
+                        </div>
+                        <div class="buy-now">
+                            <button
+                                onclick="addToCart('PS England Shoes', 37.24, 'https://i.postimg.cc/8CmBZH5N/jacket.webp')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button
+                                onclick="addToCart('PS England Jacket', 17.24, 'https://i.postimg.cc/8CmBZH5N/jacket.webp' )">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://i.postimg.cc/RhVP7YQk/hs1.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England T-Shirt</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            &dollar;15.24
+
+                        </div>
+                        <div class="buy-now">
+                            <button
+                                onclick="addToCart('PS England Shoes', 37.24, 'https://i.postimg.cc/8CmBZH5N/jacket.webp')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button
+                                onclick="addToCart('PS England Jacket', 17.24, 'https://i.postimg.cc/8CmBZH5N/jacket.webp' )">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="https://i.postimg.cc/zD02zJq8/na2.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>PS England Bag</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price">
+                            &dollar;09.28
+                            <div class="colors">
+                                <i class='bx bxs-circle blank'></i>
+                                <i class='bx bxs-circle grey'></i>
+                                <i class='bx bxs-circle brown'></i>
+                            </div>
+                        </div>
+                        <div class="buy-now">
+                            <button
+                                onclick="addToCart('PS England Shoes', 37.24, 'https://i.postimg.cc/8CmBZH5N/jacket.webp')">
+                                <a>
+                                    Add to Cart
+
+                                </a>
+                            </button>
+                            <button
+                                onclick="addToCart('PS England Jacket', 17.24, 'https://i.postimg.cc/8CmBZH5N/jacket.webp' )">
+
+
+                                <a href="checkout.html">Buy now</a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seller container">
+            <h2>All Prodecut</h2>
+        </div>
+        <section id="sellers">
+
+            <!-- This will be dynamically populated by JavaScript -->
+        </section>
+
+
+
+        <div id="productsSection"></div>
+
+
+    </section>
+    <!-- end selling area   
+     start news 
+    <section id="news">
+        <div class="news-heading">
+            <p>LATEST NEWS</p>
+            <h2>About New Open Day</h2>
+        </div>
+        <div class="l-news container">
+            <div class="l-news1">
+                <div class="news1-img">
+                    <img src="https://i.postimg.cc/2y6wbZCm/news1.jpg" alt="img">
+                </div>
+                <div class="news1-conte">
+                    <div class="date-news1">
+                        <p><i class='bx bxs-calendar'></i> 12 February 2022</p>
+                        <h4>What Curling Irons Are The Best Ones</h4>
+                        <a href="https://www.instagram.com/3abak_cosmetics/" target="_blank">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="l-news2">
+                <div class="news2-img">
+                    <img src="https://i.postimg.cc/9MXPK7RT/news2.jpg" alt="img">
+                </div>
+                <div class="news2-conte">
+                    <div class="date-news2">
+                        <p><i class='bx bxs-calendar'></i> 17 February 2022</p>
+                        <h4>The Health Benefits Of Sunglasses</h4>
+                        <a href="https://www.instagram.com/3abak_cosmetics/" target="_blank">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="l-news3">
+                <div class="news3-img">
+                    <img src="https://i.postimg.cc/x1KKdRLM/news3.jpg" alt="img">
+                </div>
+                <div class="news3-conte">
+                    <div class="date-news3">
+                        <p><i class='bx bxs-calendar'></i> 26 February 202</p>
+                        <h4>Eternity Bands Do Last Forever</h4>
+                        <a href="https://www.instagram.com/3abak_cosmetics/" target="_blank">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- end news  -->
+    <!-- Start Discount -->
+    <div class="discount" id="discount">
+        <div class="image">
+            <div class="cont">
+                <h2>We Have A Discount</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi asperiores consectetur,
+                    recusandae
+                    ratione provident necessitatibus, cumque delectus commodi fuga praesentium beatae. Totam vel
+                    similique
+                    laborum dicta aperiam odit doloribus corporis.
+                </p>
+                <img decoding="async" src="images/discount.png" alt="" />
+            </div>
+        </div>
+        <div class="form">
+            <div class="cont">
+                <h2>Request A Discount Code</h2>
+                <form action="">
+                    <input class="input" type="text" placeholder="Your Name" name="name" autocomplete="name" />
+                    <input class="input" type="email" placeholder="Your Email" name="email" autocomplete="email" />
+                    <input class="input" type="tel" placeholder="Your Phone" name="mobile" autocomplete="tel" />
+                    <input type="submit" value="Send" />
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Discount -->
+    <!-- start footer -->
+    <footer>
+        <div class="footer-container container">
+            <div class="content_1">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="content_2">
+                <h4>SHOPPING</h4>
+                <a href="#sellers">Clothing Store</a>
+                <a href="#sellers">Accessories</a>
+            </div>
+            <div class="content_3">
+                <h4>SHOPPING</h4>
+                <a href="https://www.instagram.com/3abak_cosmetics/" target="_blank">Contact Us</a>
+                <a href="https://codepen.io/sandeshbodake/full/Jexxrv" target="_blank">Return and Exchange</a>
+            </div>
+            <div class="content_4">
+                <h4>NEWLETTER</h4>
+                <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+
+                <hr>
+            </div>
+        </div>
+        <div class="f-design">
+            <div class="f-design-txt container">
+                <p>WebSite made By
+                    <a href="https://www.linkedin.com/in/yousef-abdallah-893980283/"> <i class="fa-brands fa-linkedin"
+                            style="color: #ffffff; margin: 0px 10px 10px;  font-size: 30px;"></i> </a>
+
+
+
+
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>

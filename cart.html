@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/cart.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <header id="siteHeader" class="header-hide">
+        <div class="container">
+            <a href="" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="show fa-solid fa-delete-left fa-2xl" style="color: #ff3c78;"></i>
+                            <i class="hide fa-solid fa-house fa-2xl" style="color: #ff3c78;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="cartPage">
+        <div class="checkout-container">
+            <h1>Your Cart</h1>
+            <div id="cartItems"></div>
+            <div id="totalPrice" class="total-price">Total: EGP 0.00</div>
+            <button class="btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </section>
+    <script src="Js/cart.js"></script>
+</body>
+
+</html>

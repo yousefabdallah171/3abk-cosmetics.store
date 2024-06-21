@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/Checkout.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Checkout</title>
+</head>
+
+<body>
+    <!-- start header -->
+    <header id="siteHeader" class="header-hide">
+        <div class="continer ">
+            <a href="" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class=" show fa-solid fa-delete-left fa-2xl" style="color: #ff3c78;"></i>
+
+                            <i class=" hide fa-solid fa-house fa-2xl" style="color: #ff3c78;"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+    <!-- end header  -->
+    <div class="wrapper  checkout-container">
+
+        <h1>Checkout</h1>
+        <p>Review your items and enter delivery information.</p>
+
+        <!-- Section to display checkout items -->
+        <div id="checkoutItems"></div>
+
+        <!-- Section to display total cost -->
+        <div id="totalSection">
+            <h2>Total Cost</h2>
+            <div id="totalPrice"></div>
+        </div>
+
+        <div id="deliveryForm">
+        </div>
+
+        <h1 class="fill">Fill This To confirm Your Order</h1>
+
+        <form id="orderForm" action="https://formspree.io/f/xvoeelgn" method="POST">
+
+            <!-- Hidden inputs for each item in the cart -->
+            <div id="cartItems">
+                <!-- JavaScript will populate this with hidden inputs -->
+            </div>
+            <div class="input-box">
+                <label>
+                    Your Name:
+                    <input type="text" name="text">
+                </label>
+            </div>
+            <div class="input-box">
+                <label>
+                    Your Email:
+                    <input type="email" id="username" name="email" autocomplete="email" required>
+                </label>
+            </div>
+            <div class="input-box">
+                <label>
+                    Phone Number:
+                    <input type="tel" name="phoneNumber" minlength="11" required>
+                    <small>Minimum 11 digits</small>
+                </label>
+            </div>
+            <div class="input-box">
+                <label>
+                    Phone Number 2:
+                    <input type="tel" name="phoneNumber2" minlength="11">
+                    <small>Minimum 11 digits</small>
+                </label>
+            </div>
+            <div class="input-box">
+                <label>
+                    Your Country
+                    :
+                    <input type="text" name="text" required>
+                </label>
+            </div>
+            <div class="input-box">
+                <label>
+                    Your specific Location:
+                    <input class="loc" type="text" name="location" required>
+                </label>
+            </div>
+            <div class="input-box">
+                <label>
+                    leave Your Message if You Have Notes:
+                    <input class="locc" type="text" name="notes">
+                </label>
+            </div>
+            <button type="submit" class="btn">Confirm Order</button>
+
+        </form>
+    </div>
+
+
+    <script src="Js/Check.js"></script>
+
+</body>
+
+</html>
