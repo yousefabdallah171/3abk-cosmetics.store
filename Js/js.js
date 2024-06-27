@@ -7,6 +7,7 @@ function redirectToCartPage() {
 }
 
 function addToCart(name, price, image) {
+    alert(`Added ${name}  $${price} to Your cart.`);
     const product = { name, price, image };
     cart.push(product);
     localStorage.setItem('cart', JSON.stringify(cart)); // Save to localStorage
@@ -24,15 +25,15 @@ function updateCart() {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'cart-item';
             itemDiv.innerHTML = `
-                <div class="cart-item-image">
-                    <img src="${item.image}" alt="${item.name}" width="50" height="50">
-                </div>
-                <div class="cart-item-details">
-                    <span class="cart-item-name">${item.name}</span>
-                    <span class="cart-item-price">EGP ${item.price.toFixed(2)}</span>
-                    <button onclick="removeFromCart(${index})">Remove</button>
-                </div>
-            `;
+                    <div class="cart-item-image">
+                        <img src="${item.image}" alt="${item.name}" width="50" height="50">
+                    </div>
+                    <div class="cart-item-details">
+                        <span class="cart-item-name">${item.name}</span>
+                        <span class="cart-item-price">EGP ${item.price.toFixed(2)}</span>
+                        <button onclick="removeFromCart(${index})">Remove</button>
+                    </div>
+                `;
             cartItems.appendChild(itemDiv);
         });
     }
@@ -145,36 +146,42 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// pro from here 
+// pro from here
 // index.js
 // img login code // Toggle dropdown menu visibility// Toggle dropdown menu visibility
-// Example index.js (assuming index.html structure and elements)
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
-    const localStorageKey = 'products';
     const bestSellerContainer = document.getElementById('sellers');
-    let products = JSON.parse(localStorage.getItem(localStorageKey)) || [];
 
     displayProducts();
-    loadHeader(); // Ensure header is loaded initially
+    loadHeader();
 
-    function displayProducts() {
+    async function fetchProducts() {
+        try {
+            const response = await fetch('http://localhost:3000/api/products');
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('Failed to fetch products:', error);
+            return [];
+        }
+    }
+
+    async function displayProducts() {
         bestSellerContainer.innerHTML = '';
+        const products = await fetchProducts();
 
-        // Split products into groups of four
+        if (products.length === 0) {
+            bestSellerContainer.textContent = 'No products available';
+            return;
+        }
+
         for (let i = 0; i < products.length; i += 4) {
             const section = document.createElement('div');
-            section.classList.add('seller', 'container');
+            section.classList.add('best-seller');
 
-            // Create header for the section
-            const header = document.createElement('h2');
-            header.textContent = getHeader(i); // Get header dynamically based on current index
-            header.classList.add('section-header'); // Add appropriate class for styling
-            section.appendChild(header);
-
-            const productWrapper = document.createElement('div');
-            productWrapper.classList.add('best-seller');
-
-            // Add up to four products in this section
             for (let j = i; j < i + 4 && j < products.length; j++) {
                 const product = products[j];
                 const productDiv = document.createElement('div');
@@ -185,57 +192,137 @@ document.addEventListener('DOMContentLoaded', () => {
                     .join('');
 
                 productDiv.innerHTML = `
-                    <img src="${product.image}" alt="${product.name}">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>${product.name}</p>
+                        <img src="${product.image}" alt="${product.name}">
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>${product.name}</p>
+                            </div>
+                            <div class="rating">
+                                ${ratingStars}
+                            </div>
+                            <p class="description">${product.description}</p>
+                            <div class="price">
+                                &pound;${product.price}
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('${product.name}', ${product.price}, '${product.image}')">
+                                    <a>Add to Cart</a>
+                                </button>
+                                <button onclick="addToCart('${product.name}', ${product.price}, '${product.image}')">
+                                    <a href="checkout.html">Buy now</a>
+                                </button>
+                            </div>
                         </div>
-                        <div class="rating">
-                            ${ratingStars}
-                        </div>
-                        <p class="description">${product.description}</p>
-                        <div class="price">
-                            &pound;${product.price}
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('${product.name}', ${product.price}, '${product.image}')">
-                                <a>Add to Cart</a>
-                            </button>
-                            <button onclick="addToCart('${product.name}', ${product.price}, '${product.image}')">
-                                <a href="checkout.html">Buy now</a>
-                            </button>
-                        </div>
-                    </div>
-                `;
+                    `;
 
-                productWrapper.appendChild(productDiv);
+                section.appendChild(productDiv);
             }
-
-            section.appendChild(productWrapper);
+            // section.appendChild(productWrapper);
             bestSellerContainer.appendChild(section);
         }
     }
 
-    // Function to get header dynamically based on index
-    function getHeader(index) {
-        
-        // return products[index]?.header || 'All';
-    }
-
-    // Function to load and display saved header
     function loadHeader() {
-        const savedHeader = localStorage.getItem('sectionHeader');
-        if (savedHeader) {
-            const indexHeader = document.getElementById('indexHeader'); // Adjust the ID as per your index.html structure
-            if (indexHeader) {
-                indexHeader.textContent = savedHeader;
-            }
-        }
+        // Your existing loadHeader function logic remains the same
     }
 
-    // Function to handle adding a product to cart (example implementation)
+    function updateProducts() {
+        displayProducts();
+    }
+
+    window.addEventListener('storage', (event) => {
+        if (event.key === 'products') {
+            updateProducts();
+        }
+    });
+
     function addToCart(name, price, image) {
         console.log(`Added ${name} to cart.`);
         // Implement your cart logic here
     }
 });
+
+
+// Function to fetch top sales products
+async function fetchTopSales() {
+    try {
+        const response = await fetch('http://localhost:3000/api/topsales');
+        const products = await response.json();
+        const container = document.getElementById('top-sales-container');
+        container.innerHTML = ''; // Clear any existing content
+
+        products.forEach(product => {
+            // Create product card
+            const productDiv = document.createElement('div');
+            productDiv.classList.add('best-p1');
+
+            productDiv.innerHTML = `
+
+                        <img src="${product.image}" alt="${product.name}"class="image" onclick="openImage(this.src)">
+
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>${product.name}</p>
+                            </div>
+                            <div class="rating">
+                                ${renderStars(product.rating, product.starColor)}
+                            </div>
+                            <p class="description">${product.description}</p>
+                            <div class="price">
+                                &pound;${product.price}
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('${product.name}', ${product.price}, '${product.image}')">
+                                    <a>Add to Cart
+                                    <i style="" class=" fas fa-shopping-bag"></i></a>
+                                </button>
+                                <button onclick="addToCart('${product.name}', ${product.price}, '${product.image}')">
+                                    <a href="checkout.html">Buy now
+                                    <i class="fas fa-credit-card"></i></a>
+                                </button>
+                            </div>
+                        </div>
+                    `;
+            container.appendChild(productDiv);
+        });
+    } catch (error) {
+        console.error('Error fetching top sales products:', error);
+    }
+}
+
+// Function to render star rating
+function renderStars(rating, starColor = '#FFD43B') {
+    const maxStars = 5;
+    let starHtml = '';
+    for (let i = 1; i <= maxStars; i++) {
+        starHtml += `<i class="fa-solid fa-star" style="color: ${i <= rating ? starColor : '#ccc'};"></i>`;
+    }
+    return starHtml;
+}
+
+
+// Fetch top sales products on page load
+window.onload = fetchTopSales;
+//
+
+
+// 
+function openImage(src) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = src;
+}
+
+function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
+
+function closeModalOnClick(event) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    if (event.target !== modalImg) {
+        modal.style.display = "none";
+    }
+}
