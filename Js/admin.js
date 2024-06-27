@@ -387,3 +387,4 @@ async function fetchProducts() {
 
 // Attach event listener to form submission
 document.getElementById('product-form').addEventListener('submit', saveProduct);
+
