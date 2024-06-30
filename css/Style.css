@@ -39,7 +39,6 @@ a {
 
 .container {
     max-width: 1200px;
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -113,7 +112,7 @@ header .logo {
 }
 
 header a h1 {
-cursor: pointer;
+    cursor: pointer;
     margin: 0 10px;
     color: #a5935c;
 }
@@ -321,30 +320,119 @@ header .form {
 
 }
 
-
-
-
-
-/* /* end header    */
-
-.home_page {
-    width: 100%;
-    background-image: url(../images/landing.jpg);
+/* start */
+.landing {
+    min-height: 100vh;
+    background-color: #19c8fa;
+    background-image: url(../images/land.jpg);
     background-size: cover;
-    height: calc(100vh - 64px);
-
+    position: relative;
 }
 
-.home_txt {
+.landing .overlay {
     position: absolute;
-    top: 37%;
-    left: 5%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 60%);
+}
+
+
+.landing .text {
+background-color:rgb(15 116 143 / 70%);
+    padding: 40px 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landing .contet {
+
+    max-width: 500px;
+}
+
+
+
+.landing .text .contet h2 {
+    font-size: 30px;
+    line-height: 1.5;
+
+    font-weight: normal;
+}
+
+.landing .text .contet p {
+
+    line-height: 2;
+    font-size: 15px;
+}
+
+.landing .change-background:hover {
+    color: #19c8fa;
+}
+
+.landing .change-background {
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    color: white;
+    transform: translateY(-50%);
+}
+
+@media (max-width :767px) {
+    .landing .text {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .landing .change-background {
+        display: none;
+    }
+}
+
+
+.landing .buulet {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
+
+.landing .buulet li {
+    width: 20px;
+    margin-right: 10px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.landing .buulet .active {
+    border-color: var(--mian-color);
+    background-color: var(--mian-color);
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.left-position {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
 }
 
 .home_txt p {
     color: var(--primary-color);
     font-weight: 600;
-    padding-bottom: 20px;
     letter-spacing: 1.5px;
 }
 
@@ -380,12 +468,9 @@ header .form {
 }
 
 .home_txt button {
-    border-radius: 5px;
-    cursor: pointer;
     height: 45px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
     color: #fff6f6;
     font-weight: 600;
     background-color: #000000;
@@ -394,7 +479,6 @@ header .form {
     padding: 15px 30px;
     font-size: 14px;
     letter-spacing: 2px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -416,7 +500,13 @@ header .form {
     display: flex;
     margin-left: 20px;
     align-items: center;
+    
+}
+@media(max-width:767px){
+    .home_txt .home_social_icons{
 
+        justify-content: center;
+    }
 }
 
 .home_txt .home_social_icons a {
@@ -994,7 +1084,7 @@ i {
     padding: 15px;
     border: none;
     border-radius: 15px;
- 
+
 }
 
 .discount .form .input:focus {
@@ -1076,9 +1166,9 @@ i {
 /* Start footer */
 footer {
     position: relative;
-padding-bottom: 100px;
-padding-top: 100px;
-background-image: url(../images/landing.jpg);
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-image: url(../images/landing.jpg);
     background-size: cover;
 
 }
@@ -1104,9 +1194,11 @@ footer a {
     position: relative;
 
 }
+
 footer p {
     color: red;
 }
+
 footer h3 {
     padding-top: 50px;
     font-size: 16px;
@@ -1236,37 +1328,6 @@ footer::after {
 
 @media (max-width: 767px) {
 
-    .home_txt h2 {
-        font-size: 18px;
-    }
-
-    .home_txt .home_label p {
-        font-size: 12px;
-        max-width: 80%;
-    }
-
-    .home_txt {
-        position: absolute;
-        top: 20%;
-        left: 5%;
-        font-size: 12px;
-    }
-
-    .home_txt button {
-        padding: 2px 5px;
-        font-size: 13px;
-    }
-
-    .home_txt i {
-        display: none;
-    }
-
-    .home_txt .home_social_icons {
-        display: none;
-    }
-
-
-
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -1283,17 +1344,6 @@ footer::after {
 
 
 
-    .home_txt {
-        position: absolute;
-        top: 20%;
-        left: 5%;
-        font-size: 12px;
-    }
-
-    .home_txt button {
-        padding: 7px 7px;
-        font-size: 10px;
-    }
 
     .best-seller {
         display: flex;
