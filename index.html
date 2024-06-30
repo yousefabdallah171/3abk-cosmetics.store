@@ -65,33 +65,35 @@
     </div>
     <!-- end header  -->
     <!-- start landing page -->
-    <section id="home">
-
-
-        <div class="home_page ">
-            <div loading="lazy" alt="description" class="home_img ">
-            </div>
-            <div class="home_txt ">
-                <p class="Collection">SUMMER COLLECTION</p>
-                <h2>3abk - Brand<br>Collection 2024</h2>
-                <div class="home_label ">
-                    <p>
-                        Bringing out natural beauty with gentle and affordable skincare, makeup, and personal care
-                        products for everyday use. Simple and effective..</p>
+    <div class="landing">
+        <div class="overlay"></div>
+        <div class="text left-position">
+            <div class="contet">
+                <div class="home_txt">
+                    <p class="Collection">SUMMER COLLECTION
+                    <h2>3abk-Brand<br>Collection 2024</h2>
+                    <div class="home_label">
+                        <p>Bringing out natural beauty with gentle and affordable skincare, makeup, and personal care
+                            products for everyday use. Simple and effective..
+                    </div><button><a href="#selelers" class="smooth-scroll">SHOP NOW</a><i
+                            class="bx bx-right-arrow-alt"></i></button>
+                    <div class="home_social_icons"><a href="https://www.facebook.com/profile.php?id=61555486414543"
+                            target="_blank"><i class="fa-brands fa-facebook"></i></a> <a
+                            href="https://www.instagram.com/3abak_cosmetics/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a> <a href="https://wa.me/201211490415"
+                            target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
                 </div>
-                <button><a class="smooth-scroll" href="#selelers">SHOP NOW</a><i
-                        class='bx bx-right-arrow-alt'></i></button>
-                <div class="home_social_icons">
 
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61555486414543"><i
-                            class="fa-brands fa-facebook"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/3abak_cosmetics/"><i
-                            class="fa-brands fa-instagram"></i></i></a>
-                    <a target="_blank" href="https://wa.me/201211490415"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
             </div>
+
         </div>
-    </section>
+
+
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+        </ul>
+    </div>
     <!-- end landing page  -->
     <!-- start the three collection  -->
     <section id="collection">
@@ -100,7 +102,7 @@
                 <img src="https://fimgs.net/mdimg/secundar/o.51827.jpg" alt="img" />
                 <div class="img-content">
                     <p>Perfume Collections</p>
-                    <button><a class="smooth-scroll" href="#selelers">SHOP NOW</a></button>
+                    <button><a class="smooth-scroll" href="#per">SHOP NOW</a></button>
                 </div>
             </div>
             <div class="content2">
@@ -114,7 +116,7 @@
                 <img src="https://th.bing.com/th/id/OIP.TK5YXET2zwgZy6SqiG0BcAHaIq?rs=1&pid=ImgDetMain" alt="img" />
                 <div class="img-content3">
                     <p>Budy Splash</p>
-                    <button><a class="smooth-scroll" href="#newaarr">SHOP NOW</a></button>
+                    <button><a class="smooth-scroll" href="#budy">SHOP NOW</a></button>
                 </div>
             </div>
         </div>
@@ -122,18 +124,555 @@
     <!-- end  the three collection  -->
     <!-- start selling area  -->
     <!--  -->
+    <!-- <div class="seller container">
+        <h2>All Prodecut</h2>
+        <div class="best-seller" id="top-sales-container">
+            Products will be inserted here dynamically 
+        </div>
+        <div id="productsSection">
+        </div>
+    </div> -->
 
 
 
+    <!-- <div class="seller container">
+        <h2>sd</h2>
+        <div class="best-seller">
 
+
+        </div>
+    </div> -->
 
     <!--  -->
     <section id="selelers">
-        <div class="seller container">
-            <h2>Top Sales</h2>
+        <div class="seller container" id="budy">
+            <h2>budy splash</h2>
             <div class="best-seller">
+                <!-- Modal structure -->
+                <div id="imageModal" class="modal" onclick="closeModalOnClick(event)">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="modal-content" id="modalContainer">
+                        <img id="modalImage" class="zoomable-image">
+                    </div>
+                </div>
 
                 <!-- start prodect  -->
+
+                <div class="best-p1">
+                    <img src="images/5.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Budy Splash For women</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;175
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Budy Splash For women', 175, 'images/5.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                            <button onclick="addToCart('Budy Splash For women', 175, 'images/5.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="best-p1">
+                    <img src="images/6.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Budy Splash For Man</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;175
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Budy Splash For Man', 175, 'images/6.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                            <button onclick="addToCart('Budy Splash For Man', 175, 'images/6.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="images/7.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Budy Splash For women</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;175
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Budy Splash For women', 175, 'images/7.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                                <button onclick="addToCart('Budy Splash For women', 175, 'images/7.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="images/8.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Budy Splash For women</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;175
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Budy Splash For women', 175, 'images/8.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                                <button onclick="addToCart('Budy Splash For women', 175, 'images/8.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="images/9.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Deodorant Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;175
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Deodorant cream', 175, 'images/pro1_65.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                            <button onclick="addToCart('Deodorant cream', 175, 'images/pro1_65.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="best-p1">
+                    <img src="images/13.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Deodorant Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;35
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Deodorant cream', 35, 'images/pro1_65.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                            <button onclick="addToCart('Deodorant cream', 35, 'images/pro1_65.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        <!--  prodect  -->
+        </div>
+        </div>
+
+
+
+        <div class="seller container">
+
+
+
+            <div id="per" class="seller container">
+                <h2>Perfume Collection</h2>
+                <div class="best-seller">
+                    <div class="best-p1">
+                        <img src="images/21.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Deodorant Cream</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                                quam
+                                doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                            </p>
+                            <div class="price">
+                                &pound;65
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                    <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                                </button>
+                                <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                    <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-p1">
+                        <img src="images/46.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Hand Cream</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                                quam
+                                doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                            </p>
+
+                            <div class="price">
+                                &pound;65
+
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+                                    <a>
+                                        Add to Cart
+                                        <i style="" class=" fas fa-shopping-bag"></i>
+                                    </a>
+                                </button>
+                                <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+
+
+                                    <a href="checkout.html">Buy now
+
+                                        <i class="fas fa-credit-card"></i>
+                                    </a>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-p1">
+                        <img src="images/35.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Serum to treat and pigmentation</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                                quam
+                                doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                            </p>
+
+                            <div class="price">
+                                &pound;175
+
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
+                                    <a>
+                                        Add to Cart
+                                        <i style="" class=" fas fa-shopping-bag"></i>
+                                    </a>
+                                </button>
+                                <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
+
+
+                                    <a href="checkout.html">Buy now
+
+                                        <i class="fas fa-credit-card"></i>
+                                    </a>
+
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="best-p1">
+                        <img src="images/41.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>mini body splash</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                                quam
+                                doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                            </p>
+
+                            <div class="price">
+                                &pound;35
+
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('Body Splash ',35, 'images/pro6 35.jpeg')">
+                                    <a>
+                                        Add to Cart
+                                        <i style="" class=" fas fa-shopping-bag"></i>
+                                    </a>
+                                </button>
+                                <button onclick="addToCart('Body Splash ',35, 'images/pro6 35.jpeg')">
+
+
+                                    <a href="checkout.html">Buy now
+
+                                        <i class="fas fa-credit-card"></i>
+                                    </a>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="seller container">
+            <h2>sd</h2>
+            <div class="best-seller">
+
+                <!-- ssssssssssssssssssssssss -->
+                <div class="best-p1">
+                    <img src="images/23.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Deodorant Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;65
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="images/31.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Deodorant Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;65
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="images/32.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Deodorant Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;65
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="images/40.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Serum to treat and pigmentation</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+
+                        <div class="price">
+                            &pound;175
+
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
+                                <a>
+                                    Add to Cart
+                                    <i style="" class=" fas fa-shopping-bag"></i>
+                                </a>
+                            </button>
+                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
+
+
+                                <a href="checkout.html">Buy now
+
+                                    <i class="fas fa-credit-card"></i>
+                                </a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="seller container">
+            <h2>sssssd</h2>
+            <div class="best-seller">
                 <div class="best-p1">
                     <img src="images/1.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
@@ -154,7 +693,7 @@
                             &pound;65
                         </div>
                         <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                            <button onclick="addToCart('Deodorant cream', 65, 'images/1.jpeg')">
                                 <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
                             </button>
                             <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
@@ -163,18 +702,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Modal structure -->
-                <div id="imageModal" class="modal" onclick="closeModalOnClick(event)">
-                    <span class="close" onclick="closeModal()">&times;</span>
-                    <div class="modal-content" id="modalContainer">
-                        <img id="modalImage" class="zoomable-image">
-                    </div>
-                </div>
-
-                <!-- end prodect  -->
-                <!-- start prodect  -->
-                <!--  -->
                 <div class="best-p1">
                     <img src="images/2.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
@@ -263,273 +790,10 @@
                     </div>
                 </div>
                 <div class="best-p1">
-                    <img src="images/5.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <img src="images/17.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/6.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/7.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/8.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/9.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="best-p1">
-                    <img src="images/10.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/11.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/12.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/13.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="best-p1">
-                    <img src="images/14.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Hair Balm</p>
+                            <p>Serum to treat and pigmentation</p>
                         </div>
                         <div class="rating">
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
@@ -543,21 +807,17 @@
                         </p>
 
                         <div class="price">
-                            &pound;85
+                            &pound;175
 
                         </div>
-
-
                         <div class="buy-now">
-                            <button onclick="addToCart('Hair Balm', 85, 'images/pro2 85.jpeg' )">
+                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
                                 <a>
                                     Add to Cart
                                     <i style="" class=" fas fa-shopping-bag"></i>
                                 </a>
                             </button>
-
-
-                            <button onclick="addToCart('Hair Balm', 85, 'images/pro2 85.jpeg' )">
+                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
 
 
                                 <a href="checkout.html">Buy now
@@ -569,7 +829,6 @@
                         </div>
                     </div>
                 </div>
-                <!--  prodect  -->
                 <div class="best-p1">
                     <img src="images/15.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
@@ -611,7 +870,35 @@
                         </div>
                     </div>
                 </div>
-                <!--  prodect  -->
+                <div class="best-p1">
+                    <img src="images/26.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Deodorant Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+                        <div class="price">
+                            &pound;65
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            </button>
+                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
+                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div class="best-p1">
                     <img src="images/16.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
@@ -653,226 +940,9 @@
                     </div>
 
                 </div>
+
                 <div class="best-p1">
-                    <img src="images/17.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Serum to treat and pigmentation</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-
-                        <div class="price">
-                            &pound;175
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/18.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Serum to treat and pigmentation</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-
-                        <div class="price">
-                            &pound;175
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/19.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Serum to treat and pigmentation</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-
-                        <div class="price">
-                            &pound;175
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/20.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Serum to treat and pigmentation</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-
-                        <div class="price">
-                            &pound;175
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/21.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/22.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/23.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <img src="images/25.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
                             <p>Deodorant Cream</p>
@@ -930,63 +1000,131 @@
                     </div>
                 </div>
                 <div class="best-p1">
-                    <img src="images/25.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <img src="images/45.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>Deodorant Cream</p>
+                            <p>Hand Cream</p>
                         </div>
                         <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
                         </div>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
                             doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
                         </p>
+
                         <div class="price">
                             &pound;65
+
                         </div>
                         <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+                                <a>
+                                    Add to Cart
+                                    <i style="" class=" fas fa-shopping-bag"></i>
+                                </a>
                             </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+
+
+                                <a href="checkout.html">Buy now
+
+                                    <i class="fas fa-credit-card"></i>
+                                </a>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- dssssssssssss -->
+                <div class="best-p1">
+                    <img src="images/48.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Hand Cream</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                        </p>
+
+                        <div class="price">
+                            &pound;65
+
+                        </div>
+                        <div class="buy-now">
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+                                <a>
+                                    Add to Cart
+                                    <i style="" class=" fas fa-shopping-bag"></i>
+                                </a>
+                            </button>
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+
+
+                                <a href="checkout.html">Buy now
+
+                                    <i class="fas fa-credit-card"></i>
+                                </a>
+
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="best-p1">
-                    <img src="images/26.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                    <img src="images/47.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>Deodorant Cream</p>
+                            <p>Hand Cream</p>
                         </div>
                         <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star"></i>
                         </div>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
                             doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
                         </p>
+
                         <div class="price">
                             &pound;65
+
                         </div>
                         <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+                                <a>
+                                    Add to Cart
+                                    <i style="" class=" fas fa-shopping-bag"></i>
+                                </a>
                             </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
+                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+
+
+                                <a href="checkout.html">Buy now
+
+                                    <i class="fas fa-credit-card"></i>
+                                </a>
+
                             </button>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
                 <div class="best-p1">
                     <img src="images/27.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
@@ -1104,64 +1242,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="best-p1">
-                    <img src="images/31.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/32.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Deodorant Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a>Add to Cart <i class="fas fa-shopping-bag"></i></a>
-                            </button>
-                            <button onclick="addToCart('Deodorant cream', 65, 'images/pro1_65.jpeg')">
-                                <a href="checkout.html">Buy now <i class="fas fa-credit-card"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="best-p1">
                     <img src="images/33.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
@@ -1250,47 +1330,7 @@
                     </div>
                 </div>
                 <!--  prodect  -->
-                <div class="best-p1">
-                    <img src="images/35.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Serum to treat and pigmentation</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
 
-                        <div class="price">
-                            &pound;175
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
                 <div class="best-p1">
                     <img src="images/36.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
                     <div class="best-p1-txt">
@@ -1331,473 +1371,185 @@
                         </div>
                     </div>
                 </div>
-                <div class="best-p1">
-                    <img src="images/37.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Serum to treat and pigmentation</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-
-                        <div class="price">
-                            &pound;175
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/38.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Serum to treat and pigmentation</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-
-                        <div class="price">
-                            &pound;175
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/40.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Serum to treat and pigmentation</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-
-                        <div class="price">
-                            &pound;175
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
-
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--  prodect  -->
             </div>
-        </div>
-        <div class="seller container" id="newaarr">
-            <h2>New Arrivals</h2>
+            <!--  -->
+            <div class="seller container" id="newaarr">
+                <h2>حاجات فرعيه</h2>
 
 
-            <div class="best-seller">
+                <div class="best-seller">
 
 
-                <!--  prodect  -->
-                <div class="best-p1">
-                    <img src="images/41.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>mini body splash</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
+                    <!--  prodect  -->
 
-                        <div class="price">
-                            &pound;35
+                    <div class="best-p1">
+                        <img src="images/42.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Scrabbing C''''ream</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                                doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                            </p>
 
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Body Splash ',35, 'images/pro6 35.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Body Splash ',35, 'images/pro6 35.jpeg')">
+                            <div class="price">
+                                &pound;55
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('Scrabiing cream', 55, 'images/pro3 55.jpeg')">
+                                    <a>
+                                        Add to Cart
+                                        <i style="" class=" fas fa-shopping-bag"></i>
+
+                                    </a>
+                                </button>
+                                <button onclick="addToCart('Scrabiing cream', 55, 'images/pro3 55.jpeg')">
 
 
-                                <a href="checkout.html">Buy now
+                                    <a href="checkout.html">Buy now
 
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
+                                        <i class="fas fa-credit-card"></i>
+                                    </a>
 
-                            </button>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/42.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Scrabbing C''''ream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
+                    <div class="best-p1">
+                        <img src="images/43.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Evy Cream</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                                doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                            </p>
 
-                        <div class="price">
-                            &pound;55
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Scrabiing cream', 55, 'images/pro3 55.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
+                            <div class="price">
+                                &pound;65
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('Eye Cream', 65,'images/pro4 65.jpeg')">
+                                    <a>
+                                        Add to Cart
+                                        <i style="" class=" fas fa-shopping-bag"></i>
+                                    </a>
+                                </button>
+                                <button onclick="addToCart('Eye Cream', 65,'images/pro4 65.jpeg')">
+                                    <a href="checkout.html">Buy now
 
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Scrabiing cream', 55, 'images/pro3 55.jpeg')">
+                                        <i class="fas fa-credit-card"></i>
+                                    </a>
 
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/43.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Evy Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
+                    <div class="best-p1">
+                        <img src="images/44.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Hand Cream</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                                doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                            </p>
 
-                        <div class="price">
-                            &pound;65
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Eye Cream', 65,'images/pro4 65.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Eye Cream', 65,'images/pro4 65.jpeg')">
-                                <a href="checkout.html">Buy now
+                            <div class="price">
+                                &pound;65
 
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
+                                    <a>
+                                        Add to Cart
+                                        <i style="" class=" fas fa-shopping-bag"></i>
+                                    </a>
+                                </button>
+                                <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
 
-                            </button>
+
+                                    <a href="checkout.html">Buy now
+
+                                        <i class="fas fa-credit-card"></i>
+                                    </a>
+
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/44.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Hand Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-
-                        <div class="price">
-                            &pound;65
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
 
 
-                                <a href="checkout.html">Buy now
+                    <div class="best-p1">
+                        <img src="images/38.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
+                        <div class="best-p1-txt">
+                            <div class="name-of-p">
+                                <p>Serum to treat and pigmentation</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
+                                doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
+                            </p>
 
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
+                            <div class="price">
+                                &pound;175
 
-                            </button>
+                            </div>
+                            <div class="buy-now">
+                                <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
+                                    <a>
+                                        Add to Cart
+                                        <i style="" class=" fas fa-shopping-bag"></i>
+                                    </a>
+                                </button>
+                                <button onclick="addToCart('Serum For treating', 37.24, 'images/pro5 175.jpeg')">
+
+
+                                    <a href="checkout.html">Buy now
+
+                                        <i class="fas fa-credit-card"></i>
+                                    </a>
+
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/45.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Hand Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
 
-                        <div class="price">
-                            &pound;65
-
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
-
-
-                                <a href="checkout.html">Buy now
-
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/46.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Hand Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                
-                        <div class="price">
-                            &pound;65
-                
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
-                
-                
-                                <a href="checkout.html">Buy now
-                
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-                
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/47.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Hand Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                
-                        <div class="price">
-                            &pound;65
-                
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
-                
-                
-                                <a href="checkout.html">Buy now
-                
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-                
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best-p1">
-                    <img src="images/48.jpeg" alt="Image" class="image" onclick="openImage(this.src)">
-                    <div class="best-p1-txt">
-                        <div class="name-of-p">
-                            <p>Hand Cream</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fa-solid fa-star" style="color: #FFD4للللB;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quam
-                            doloremque repellendus nisi fugiat, aliquam autem natus! Maiores, qui?
-                        </p>
-                
-                        <div class="price">
-                            &pound;65
-                
-                        </div>
-                        <div class="buy-now">
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
-                                <a>
-                                    Add to Cart
-                                    <i style="" class=" fas fa-shopping-bag"></i>
-                                </a>
-                            </button>
-                            <button onclick="addToCart('Hand Cream',65, 'images/pro8 65.jpeg')">
-                
-                
-                                <a href="checkout.html">Buy now
-                
-                                    <i class="fas fa-credit-card"></i>
-                                </a>
-                
-                            </button>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-
-
-
-        <div class="seller container">
-            <h2>All Prodecut</h2>
-            <div class="best-seller" id="top-sales-container">
-                <!-- Products will be inserted here dynamically -->
-            </div>
-            <div id="productsSection"></div>
-
-
-
 
 
         </div>
 
+        </div>
+        </div>
 
     </section>
 
@@ -1905,7 +1657,7 @@
 
                 </p>
                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <h3> C 2021 <span>3abk </span> All right Reveser</h3>
+                <h3> C 2024 <span>3abk Store </span> All right Reveser</h3>
 
             </div>
 
